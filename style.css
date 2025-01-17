@@ -1,0 +1,466 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    margin: 85px 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(34, 34, 34);
+    height: 85px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s;
+}
+
+.right ul li a:hover {
+    color: slateblue;
+}
+
+.right ul {
+    display: flex;
+}
+
+.right ul li {
+    list-style-type: none;
+    margin: 0 35px;
+    letter-spacing: 0.8px;
+}
+
+.left {
+    font-size: 29px;
+}
+
+/* Hamburger menu styles */
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* section1 css starts from here */
+
+.section1 {
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.31);
+    width: 100%;
+}
+
+.name {
+    color: slateblue;
+}
+
+#element {
+    color: slateblue;
+}
+
+.sectionleft {
+    width: 36%;
+    font-size: 48px;
+}
+
+.sectionleft div {
+    width: 60%;
+    font-size: 48px;
+}
+
+.sectionleft,
+div,
+span {
+    margin: 11px 0;
+}
+
+.buttons .btn {
+    font-size: 18px;
+    padding: 15px 22px;
+    border-radius: 7px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    background-color: slateblue;
+}
+
+.buttons .btn:hover {
+    background-color: rgb(48, 35, 136);
+}
+
+/* section_2 Css starts from here */
+
+.about-me-sec {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.a-left {
+    max-width: 555px;
+    width: 100%;
+    padding: 30px;
+}
+
+.a-right {
+    max-width: 555px;
+    width: 100%;
+    padding-top: 97px;
+}
+
+.a-heading-p {
+    width: 50%;
+}
+
+.a-heading-p h1 {
+    font-size: 30px;
+}
+
+.a-heading {
+    width: 50%;
+}
+
+.a-heading div {
+    width: 100%;
+    display: flex;
+    margin: 0 -80px;
+}
+
+.a-heading div img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.a-heading p {
+    color: gray;
+    font-size: large;
+}
+
+.a-heading h1 {
+    font-size: 30px;
+}
+
+.a-heading hr {
+    border: none;
+    background-color: slateblue;
+    height: 1.5px;
+}
+
+.about-me-content {
+    max-width: 500px;
+    width: 100%;
+    background-color: #33333389;
+    color: rgb(196, 196, 196);
+    padding: 20px;
+    font-size: larger;
+    border-radius: 20px;
+    margin-top: 62px;
+}
+
+/* progress bar css starts from here */
+
+
+.progress-bar-container {
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.skill-bar {
+    margin: 25px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.skill-bar .label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.skill-bar .bar {
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    height: 20px;
+}
+
+.skill-bar .bar .fill {
+    background-color: slateblue;
+    height: 100%;
+    width: 1%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+hr {
+    border-color: slateblue;
+}
+
+/* resume css starts from here */
+
+.resume-section {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.resume-section h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.resume-section p {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    color: rgb(191, 188, 188);
+}
+
+/* education section css starts from here */
+
+.education .e-heading {
+    margin-top: 120px;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.education hr {
+    height: 2px;
+    background-color: slateblue;
+    border: none;
+    width: 90%;
+}
+
+.e-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.left-info,
+.right-info {
+    background-color: #333;
+    width: 100%;
+    max-width: 511px;
+    border-radius: 20px;
+    padding-left: 50px;
+    height: 200px;
+}
+
+.left-info h1,
+.right-info h1 {
+    color: rgb(86, 67, 213);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.left-info h2,
+.right-info h2 {
+    font-weight: 200;
+}
+
+.left-info h3,
+.right-info h3 {
+    font-weight: 200;
+    color: rgb(196, 196, 196);
+}
+
+/* footer css starts from here  */
+
+footer {
+    margin-bottom: -185px;
+    width: 100%;
+}
+
+.section3 {
+    background-color: rgba(0, 0, 0, 0.31);
+    padding: 80px 0;
+    width: 100%;
+}
+
+.section3 .sec3-head {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 50px;
+}
+
+.contact-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.contact-item .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contact-item .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-item p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.contact-item a {
+    color: slateblue;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.section3 .extra-line,
+.copyright {
+    text-align: center;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.section3 .copyright {
+    text-align: center;
+    color: rgb(188, 186, 186);
+    letter-spacing: 1px;
+}
+
+/* responsive css start from here  */
+
+
+@media screen and (max-width:1170px) {
+    .sectionright {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sectionleft {
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .sectionright {
+        display: none;
+    }
+
+    .a-heading div img {
+        display: none;
+    }
+
+    .a-heading div h1 {
+        margin-left: 80px;
+    }
+
+    .a-left {
+        width: 95%;
+    }
+
+    .a-right {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .a-heading-p h1 {
+        font-size: 30px;
+    }
+
+
+    .about-me-content {
+        width: 90%;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .contact-item {
+        margin-top: -50px;
+    }
+
+    .left-info,
+    .right-info {
+        width: 300px;
+    }
+
+    .right-info {
+        margin-top: 40px;
+    }
+
+    .copyright {
+        width: 80%;
+        margin: auto;
+    }
+
+/* hamburger css  */
+
+    .menu-icon {
+        display: block;
+    }
+
+    .right ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(34, 34, 34);
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 150px;
+        padding: 20px;
+    }
+
+    .right ul.show {
+        display: flex;
+    }
+
+    .right ul li {
+        margin: 10px 0;
+    }
+
+}
