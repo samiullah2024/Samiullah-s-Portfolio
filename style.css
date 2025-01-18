@@ -408,9 +408,9 @@ footer {
     }
 
     .buttons .btn {
-        font-weight: 300;
-        padding: 18px 22px;
+        font-weight: 350;
         margin-bottom: -80px;
+        font-size: 15px;
     }
 
     .a-heading-p h1 {
