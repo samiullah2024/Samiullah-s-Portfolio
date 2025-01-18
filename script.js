@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animateSkillBars();
 });
 
-// humburger menu 
+// hamburger menu 
 
 const menuIcon = document.querySelector('.menu-icon');
 const navLinks = document.querySelector('.right ul');

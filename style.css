@@ -382,7 +382,8 @@ footer {
 
     .sectionleft {
         width: 100%;
-        padding-left: 50px;
+        padding-left: 40px;
+        font-size: 45px;
     }
 
     .sectionright {
@@ -404,6 +405,12 @@ footer {
     .a-right {
         width: 90%;
         padding: 30px;
+    }
+
+    .buttons .btn {
+        font-weight: bold;
+        padding: 18px 22px;
+        margin-bottom: -80px;
     }
 
     .a-heading-p h1 {
@@ -438,7 +445,15 @@ footer {
         margin: auto;
     }
 
-/* hamburger css  */
+    .resume-section p{
+        width: 97.5%;
+    }
+
+    /* hamburger css  */
+
+    nav{
+        padding-left: 16px;
+    }
 
     .menu-icon {
         display: block;
@@ -450,9 +465,10 @@ footer {
         background-color: rgb(34, 34, 34);
         position: absolute;
         top: 85px;
-        right: 0;
-        width: 150px;
-        padding: 20px;
+        right: 10px;
+        width: 90px;
+        padding: 25px;
+        border-radius: 10px;
     }
 
     .right ul.show {
@@ -460,7 +476,6 @@ footer {
     }
 
     .right ul li {
-        margin: 10px 0;
+        margin: 15px 0;
     }
-
 }
