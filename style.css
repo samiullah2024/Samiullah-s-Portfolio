@@ -408,7 +408,7 @@ footer {
     }
 
     .buttons .btn {
-        font-weight: bold;
+        font-weight: 100;
         padding: 18px 22px;
         margin-bottom: -80px;
     }
@@ -465,8 +465,8 @@ footer {
         background-color: rgb(34, 34, 34);
         position: absolute;
         top: 85px;
-        right: 10px;
-        width: 90px;
+        right: 25px;
+        width: 100px;
         padding: 25px;
         border-radius: 10px;
     }
