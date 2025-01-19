@@ -419,6 +419,10 @@ footer {
         width: 300px;
     }
 
+    .left-info{
+        margin-top: 50px;
+    }
+
     .right-info {
         margin-top: 40px;
     }
