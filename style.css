@@ -125,31 +125,19 @@ span {
 .a-right {
     max-width: 555px;
     width: 100%;
-    padding-top: 97px;
+    margin-top: 80px;
+}
+
+.a-heading-p h1{
+    font-size: 30px;
 }
 
 .a-heading-p {
     width: 50%;
 }
 
-.a-heading-p h1 {
-    font-size: 30px;
-}
-
 .a-heading {
     width: 50%;
-}
-
-.a-heading div {
-    width: 100%;
-    display: flex;
-    margin: 0 -80px;
-}
-
-.a-heading div img {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
 }
 
 .a-heading p {
@@ -161,12 +149,6 @@ span {
     font-size: 30px;
 }
 
-.a-heading hr {
-    border: none;
-    background-color: slateblue;
-    height: 1.5px;
-}
-
 .about-me-content {
     max-width: 500px;
     width: 100%;
@@ -175,7 +157,7 @@ span {
     padding: 20px;
     font-size: larger;
     border-radius: 20px;
-    margin-top: 62px;
+    margin-top: 75px;
 }
 
 /* progress bar css starts from here */
@@ -222,7 +204,7 @@ hr {
 
 .resume-section {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .resume-section h1 {
@@ -231,10 +213,11 @@ hr {
 }
 
 .resume-section p {
-    width: 100%;
+    width: 88%;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 35px;
     color: rgb(191, 188, 188);
+    margin: auto;
 }
 
 /* education section css starts from here */
@@ -443,10 +426,6 @@ footer {
     .copyright {
         width: 80%;
         margin: auto;
-    }
-
-    .resume-section p{
-        width: 97.5%;
     }
 
     /* hamburger css  */
