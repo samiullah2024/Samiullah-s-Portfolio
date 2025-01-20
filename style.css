@@ -437,6 +437,10 @@ footer {
         margin: auto;
     }
 
+    .resume-section div{
+        width: 75%;
+    }
+
     /* hamburger css  */
 
     nav{
