@@ -1,48 +1,125 @@
+// TYPING EFFECT
+
 var typed = new Typed('#element', {
-    strings: ['Web Developer.'],
-    typeSpeed: 53,
+
+    strings: [
+        'Web Developer',
+        'Frontend Developer',
+        'JavaScript Developer'
+    ],
+
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1500,
+    loop: true
+
 });
 
-// progress bar
+
+// SKILLS ANIMATION
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top <= window.innerHeight && rect.bottom >= 0;
-    }
+    const skillBars = document.querySelectorAll('.progress-fill');
 
-    function animateSkillBars() {
-        const skillBars = document.querySelectorAll('.skill-bar');
-        skillBars.forEach(bar => {
-            const fill = bar.querySelector('.fill');
-            if (isElementInViewport(bar)) {
-                const targetWidth = fill.getAttribute('data-width');
-                fill.style.width = targetWidth;
-                bar.style.opacity = 1;
-                bar.style.transform = 'translateY(0)';
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                const bar = entry.target;
+                const width = bar.getAttribute('data-width');
+
+                bar.style.width = width;
+
             }
+
         });
-    }
 
-    window.addEventListener('scroll', animateSkillBars);
+    }, { threshold: 0.5 });
 
-    animateSkillBars();
+
+    skillBars.forEach(bar => {
+
+        observer.observe(bar);
+
+    });
+
 });
 
-// hamburger menu 
 
-const menuIcon = document.querySelector('.menu-icon');
-const navLinks = document.querySelector('.right ul');
-const links = document.querySelectorAll('.right ul li a');
+// MOBILE MENU
+
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
 
 menuIcon.addEventListener('click', () => {
+
     navLinks.classList.toggle('show');
+
 });
 
-links.forEach(link => {
+
+// CLOSE MENU WHEN CLICK LINK
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+
     link.addEventListener('click', () => {
+
         navLinks.classList.remove('show');
+
     });
+
 });
 
+
+// SCROLL REVEAL ANIMATION
+
+const revealElements = document.querySelectorAll(
+    '.hero-left, .hero-right, .about, .skills, .education, .resume, .contact'
+);
+
+const revealObserver = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
+
+        }
+
+    });
+
+}, { threshold: 0.2 });
+
+revealElements.forEach(el => {
+
+    el.style.opacity = 0;
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all 1s ease";
+
+    revealObserver.observe(el);
+
+});
+
+
+// NAVBAR SCROLL EFFECT
+
+window.addEventListener("scroll", () => {
+
+    const navbar = document.querySelector(".navbar");
+
+    if (window.scrollY > 50) {
+
+        navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
+
+    } else {
+
+        navbar.style.boxShadow = "none";
+
+    }
+
+});
