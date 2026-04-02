@@ -150,7 +150,7 @@
                 <div class="skill">
                     <p>Web Development</p>
                     <div class="progress">
-                        <div class="progress-fill" data-width="78%"></div>
+                        <div class="progress-fill" data-width="82%"></div>
                     </div>
                 </div>
 
@@ -283,41 +283,7 @@
 
     </footer>
 
-    <script>
-        // Typed.js initialization
-        const typed = new Typed('#element', {
-            strings: ["Web Developer", "App Developer", "Freelancer"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-        });
-
-        // Animate progress bars on scroll
-        const progressFills = document.querySelectorAll('.progress-fill');
-
-        const fillProgressBars = () => {
-            progressFills.forEach(bar => {
-                bar.style.width = bar.getAttribute('data-width');
-            });
-        };
-
-        window.addEventListener('scroll', () => {
-            const skillsSection = document.querySelector('#skills');
-            const sectionPos = skillsSection.getBoundingClientRect().top;
-            const screenPos = window.innerHeight / 1.2;
-            if (sectionPos < screenPos) {
-                fillProgressBars();
-            }
-        });
-
-        // Menu toggle
-        const menuIcon = document.getElementById('menu-icon');
-        const navLinks = document.getElementById('nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
