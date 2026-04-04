@@ -4,7 +4,7 @@ var typed = new Typed('#element', {
     strings: [
         'Web Developer',
         'App Developer',
-        'Backend Developer'
+        'IT Specialist'
     ],
     typeSpeed: 60,
     backSpeed: 40,
@@ -75,49 +75,51 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // SCROLL REVEAL ANIMATION
 
 const revealElements = document.querySelectorAll(
-'.hero-left, .hero-right, .about, .skills, .education, .resume, .contact'
+    '.hero-left, .hero-right, .about, .skills, .education, .resume, .contact'
 );
 
 const revealObserver = new IntersectionObserver(entries => {
 
-entries.forEach(entry => {
+    entries.forEach(entry => {
 
-if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
-entry.target.style.opacity = 1;
-entry.target.style.transform = "translateY(0)";
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
 
-}
+        }
 
-});
+    });
 
-},{threshold:0.2});
+}, { threshold: 0.2 });
 
-revealElements.forEach(el=>{
+revealElements.forEach(el => {
 
-el.style.opacity = 0;
-el.style.transform = "translateY(40px)";
-el.style.transition = "all 1s ease";
+    el.style.opacity = 0;
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all 1s ease";
 
-revealObserver.observe(el);
+    revealObserver.observe(el);
 
 });
 
 
 // NAVBAR SCROLL EFFECT
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", () => {
 
-const navbar = document.querySelector(".navbar");
+    const navbar = document.querySelector(".navbar");
 
-if(window.scrollY > 50){
+    if (window.scrollY > 50) {
 
-navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
+        navbar.style.boxShadow = "0 5px 20px rgba(0,0,0,0.3)";
 
-}else{
+    } else {
 
-navbar.style.boxShadow = "none";
+        navbar.style.boxShadow = "none";
 
-}
+    }
+
 
 });
+
